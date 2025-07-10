@@ -38,18 +38,30 @@
         </div>
       </div>
 
-      <div class="flex justify-between mt-4 px-4">
+      <div class="grid grid-cols-2 gap-3 mt-4 px-4 w-full max-w-md mx-auto">
         <button
           onclick="prevPage()"
-          class="bg-stone-950 text-white px-4 py-2 rounded hover:bg-slate-600"
+          class="bg-stone-950 text-white px-4 py-2 rounded hover:bg-slate-600 text-sm"
         >
-          ← Prev
+          Prev
         </button>
         <button
           onclick="nextPage()"
-          class="bg-stone-950 text-white px-4 py-2 rounded hover:bg-slate-600"
+          class="bg-stone-950 text-white px-4 py-2 rounded hover:bg-slate-600 text-sm"
         >
-          Next →
+          Next
+        </button>
+        <button
+          onclick="setBookmark()"
+          class="bg-stone-950 text-white px-4 py-2 rounded hover:bg-slate-600 text-sm"
+        >
+          Mark Page
+        </button>
+        <button
+          onclick="goToBookmark()"
+          class="bg-stone-950 text-white px-4 py-2 rounded hover:bg-slate-600 text-sm"
+        >
+          To Marked Page
         </button>
       </div>
     </div>
@@ -134,6 +146,26 @@
           renderPage();
         } else {
           alert("Halaman tidak valid.");
+        }
+      }
+
+      function setBookmark() {
+        localStorage.setItem("flipbookBookmark", pageIndex);
+        alert(`Halaman ${pageIndex + 1} telah ditandai.`);
+      }
+
+      function goToBookmark() {
+        const savedIndex = localStorage.getItem("flipbookBookmark");
+        if (savedIndex !== null) {
+          const index = parseInt(savedIndex);
+          if (!isNaN(index) && index >= 0 && index < data.length) {
+            pageIndex = index;
+            renderPage();
+          } else {
+            alert("Penanda tidak valid.");
+          }
+        } else {
+          alert("Belum ada halaman yang ditandai.");
         }
       }
     </script>
