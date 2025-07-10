@@ -1143,8 +1143,608 @@
   "hasil_yang_diharapkan": "Sistem dapat membedakan aktivitas normal dan mencurigakan dari pengguna untuk mendeteksi ancaman internal secara dini dan akurat.",
   "tantangan": "Kesulitan dalam membedakan perilaku abnormal dari perilaku sah, keterbatasan data ancaman internal yang berlabel, dan kebutuhan akan generalisasi model.",
   "hasil_akhir": "Model berbasis autoencoder dan deep learning terbukti efektif dalam mempelajari pola normal serta mengidentifikasi penyimpangan, dan telah memperoleh 23 sitasi sejak 2024."
-}
+},
 
+{
+  "judul": "Sensor Fault Detection and Classification Using Multi-Step-Ahead Prediction with an Long Short-Term Memory (LSTM) Autoencoder",
+  "publisher": "mdpi.com",
+  "author": [
+    "Hasan, MN",
+    "Jan, SU",
+    "Koo, I"
+  ],
+  "tahun": 2024,
+  "sumber_data": "https://www.mdpi.com/2076-3417/14/17/7717",
+  "rumusan_masalah": "Bagaimana mendeteksi dan mengklasifikasikan kesalahan sensor secara dini menggunakan prediksi multi-langkah dengan model LSTM autoencoder?",
+  "penelitian_terkini": "Menggunakan jaringan LSTM autoencoder untuk mempelajari pola sinyal sensor dan memprediksi beberapa langkah ke depan untuk mendeteksi penyimpangan.",
+  "hasil_yang_diharapkan": "Model dapat mengidentifikasi anomali sensor secara akurat dan melakukan klasifikasi kesalahan secara real-time.",
+  "tantangan": "Akurasi prediksi yang menurun pada horizon waktu yang panjang, serta kebutuhan pelatihan model yang tepat untuk berbagai jenis sensor.",
+  "hasil_akhir": "Model LSTM autoencoder berhasil diterapkan untuk deteksi dan klasifikasi kesalahan sensor, dan telah mendapat 4 sitasi sejak 2024."
+},
+
+{
+  "judul": "Anomaly detection using LSTM-based variational autoencoder in unsupervised data in power grid",
+  "publisher": "ieeexplore.ieee.org",
+  "author": [
+    "Guha, D",
+    "Chatterjee, R",
+    "Sikdar, B"
+  ],
+  "tahun": 2023,
+  "sumber_data": "https://ieeexplore.ieee.org/abstract/document/10109988/",
+  "rumusan_masalah": "Bagaimana mendeteksi anomali dalam data tak berlabel dari jaringan listrik dengan menggunakan pendekatan unsupervised deep learning?",
+  "penelitian_terkini": "Mengembangkan dan menerapkan model LSTM-based Variational Autoencoder (MVAE) untuk mendeteksi anomali dalam data power grid yang tidak berlabel.",
+  "hasil_yang_diharapkan": "Model MVAE mampu membedakan data normal dan abnormal secara efisien, bahkan tanpa label pelatihan eksplisit.",
+  "tantangan": "Menentukan distribusi laten yang tepat dalam struktur VAE yang dimodifikasi dan mengelola data power grid yang kompleks secara temporal.",
+  "hasil_akhir": "Model LSTM-based MVAE berhasil diterapkan pada data jaringan listrik dan telah disitasi sebanyak 40 kali sejak tahun 2023."
+},
+
+{
+  "judul": "Addag-ae: Anomaly detection in dynamic attributed graph based on graph attention network and LSTM autoencoder",
+  "publisher": "mdpi.com",
+  "author": [
+    "Miao, G",
+    "Wu, G",
+    "Zhang, Z",
+    "Tong, Y",
+    "Lu, B"
+  ],
+  "tahun": 2023,
+  "sumber_data": "https://www.mdpi.com/2079-9292/12/13/2763",
+  "rumusan_masalah": "Bagaimana cara mendeteksi anomali dalam grafik dinamis beratribut menggunakan kombinasi Graph Attention Network (GAT) dan LSTM-Autoencoder?",
+  "penelitian_terkini": "ADDAG-AE menggabungkan GAT dan LSTM-AE untuk merekonstruksi node dan atributnya, serta memprediksi perilaku anomali pada grafik dinamis.",
+  "hasil_yang_diharapkan": "Sistem mampu secara akurat mendeteksi anomali pada data graf beratribut dengan menangkap baik fitur struktural maupun temporal.",
+  "tantangan": "Mengintegrasikan informasi spasial dari GAT dan informasi temporal dari LSTM dalam grafik yang terus berubah.",
+  "hasil_akhir": "ADDAG-AE menunjukkan performa yang menjanjikan dalam mendeteksi anomali pada data graf dinamis dan telah disitasi sebanyak 3 kali sejak 2023."
+},
+
+{
+  "judul": "Autoencoder-LSTM Algorithm for Anomaly Detection",
+  "publisher": "ieeexplore.ieee.org",
+  "author": [
+    "Akbarian, H",
+    "Mahgoub, I",
+    "..."
+  ],
+  "tahun": 2023,
+  "sumber_data": "https://ieeexplore.ieee.org/abstract/document/10374710/",
+  "rumusan_masalah": "Bagaimana meningkatkan kinerja deteksi anomali dengan menggabungkan Autoencoder dan LSTM dibandingkan metode DNN-LSTM tradisional?",
+  "penelitian_terkini": "Makalah ini mengusulkan algoritma AE-LSTM untuk mendeteksi anomali dan membandingkannya dengan model benchmark DNN-LSTM.",
+  "hasil_yang_diharapkan": "Model AE-LSTM dapat menghasilkan akurasi deteksi anomali yang lebih tinggi dengan efisiensi yang lebih baik dibandingkan metode deep learning konvensional.",
+  "tantangan": "Menyesuaikan arsitektur Autoencoder dan LSTM agar mampu belajar pola anomali dari data sekuensial secara efektif.",
+  "hasil_akhir": "Model AE-LSTM menunjukkan performa yang menjanjikan dalam deteksi anomali dan telah disitasi sebanyak 5 kali sejak 2023."
+},
+
+{
+  "judul": "Prediction model of sparse autoencoder-based bidirectional LSTM for wastewater flow rate",
+  "publisher": "Springer",
+  "author": [
+    "Huang, J",
+    "Yang, S",
+    "Li, J",
+    "Oh, J",
+    "Kang, H"
+  ],
+  "tahun": 2023,
+  "sumber_data": "https://link.springer.com/article/10.1007/s11227-022-04827-3",
+  "rumusan_masalah": "Bagaimana membangun model prediksi aliran limbah air yang akurat dengan menggabungkan Sparse Autoencoder dan Bidirectional LSTM?",
+  "penelitian_terkini": "Penelitian ini menggabungkan Sparse Autoencoder (SAE) dan Bidirectional Long Short-Term Memory (BLSTM) untuk memodelkan prediksi tingkat aliran limbah air.",
+  "hasil_yang_diharapkan": "Model prediksi yang lebih akurat dan efisien untuk pengelolaan air limbah menggunakan pendekatan deep learning hibrid.",
+  "tantangan": "Menggabungkan arsitektur SAE dan BLSTM untuk menangkap pola temporal dan spasial dari data waktu nyata yang kompleks.",
+  "hasil_akhir": "Model SAE-BLSTM berhasil menunjukkan performa prediksi yang baik dan telah disitasi sebanyak 17 kali sejak tahun 2023."
+},
+
+{
+  "judul": "GCN-based LSTM autoencoder with self-attention for bearing fault diagnosis",
+  "publisher": "MDPI (Sensors)",
+  "author": [
+    "Lee, D",
+    "Choo, H",
+    "Jeong, J"
+  ],
+  "tahun": 2024,
+  "sumber_data": "https://www.mdpi.com/1424-8220/24/15/4855",
+  "rumusan_masalah": "Bagaimana meningkatkan diagnosis kerusakan bantalan dengan menggunakan arsitektur deep learning yang mampu menangani hubungan spasial dan temporal secara efektif?",
+  "penelitian_terkini": "Penelitian ini menggabungkan Graph Convolutional Network (GCN), Long Short-Term Memory (LSTM), dan mekanisme self-attention dalam autoencoder untuk mendiagnosis kerusakan bantalan.",
+  "hasil_yang_diharapkan": "Meningkatkan akurasi dan ketahanan dalam mendeteksi kesalahan bantalan pada sistem mekanik menggunakan model deep learning berbasis GCN dan LSTM.",
+  "tantangan": "Mengintegrasikan GCN, LSTM, dan self-attention secara efektif untuk memproses data waktu dan hubungan graf kompleks.",
+  "hasil_akhir": "Model yang diusulkan menunjukkan performa diagnosis yang kuat dan telah dikutip 10 kali sejak diterbitkan pada tahun 2024."
+},
+
+{
+  "judul": "RETRACTED: An effective ensemble classification framework for intrusion detection system using LSTM autoencoder",
+  "publisher": "Journal of Intelligent & Fuzzy Systems (SAGE Journals)",
+  "author": [
+    "Ketepalli, G",
+    "Bulla, P"
+  ],
+  "tahun": 2024,
+  "sumber_data": "https://journals.sagepub.com/doi/abs/10.3233/JIFS-232228",
+  "rumusan_masalah": "Bagaimana merancang kerangka klasifikasi ansambel yang efektif untuk sistem deteksi intrusi berbasis LSTM autoencoder?",
+  "penelitian_terkini": "Penelitian ini mengusulkan kombinasi LSTM dan autoencoder untuk mendeteksi pola lalu lintas jaringan dan meningkatkan akurasi sistem deteksi intrusi.",
+  "hasil_yang_diharapkan": "Meningkatkan performa klasifikasi intrusi dengan memanfaatkan pendekatan ensembel berbasis deep learning.",
+  "tantangan": "Artikel ini telah ditarik kembali (retracted), sehingga validitas ilmiah dan hasilnya tidak dapat dijamin.",
+  "hasil_akhir": "Meskipun sempat diterbitkan dan dikutip 2 kali, artikel ini telah ditarik kembali, sehingga tidak direkomendasikan untuk dijadikan referensi utama."
+},
+
+{
+  "judul": "Road Traffic Detection with a LSTM Autoencoder using State of Polarization on Deployed Metropolitan Fiber Cable",
+  "publisher": "Conference on Optical Network Design and Modeling (ONDM) - IEEE",
+  "author": [
+    "Usmani, F",
+    "D'Amico, A",
+    "Bratovich, R",
+    "..."
+  ],
+  "tahun": 2023,
+  "sumber_data": "https://ieeexplore.ieee.org/abstract/document/10144849/",
+  "rumusan_masalah": "Bagaimana memanfaatkan LSTM autoencoder untuk mendeteksi pola lalu lintas jalan dengan data optik dari kabel serat optik yang telah dipasang di lingkungan metropolitan?",
+  "penelitian_terkini": "Penelitian ini mengembangkan metode deteksi lalu lintas jalan yang tidak bergantung pada kamera atau sensor fisik, melainkan menggunakan sinyal perubahan dalam State of Polarization (SOP) pada kabel fiber.",
+  "hasil_yang_diharapkan": "Model LSTM autoencoder mampu mengenali pola lalu lintas jalan secara otomatis menggunakan data optik secara tidak terawasi.",
+  "tantangan": "Mengolah data optik dari serat optik yang rentan terhadap noise lingkungan dan fluktuasi kecil serta menjaga akurasi deteksi dalam kondisi nyata.",
+  "hasil_akhir": "Model berhasil menunjukkan bahwa LSTM autoencoder dapat digunakan untuk mendeteksi lalu lintas jalan melalui kabel fiber optik tanpa sensor tambahan, dan telah mendapat 4 sitasi sejak 2023."
+},
+
+{
+  "judul": "Comparing Autoencoder and Isolation Forest in Network Anomaly Detection",
+  "publisher": "IEEE Xplore (2023 33rd Conference of Open Innovations Association FRUCT)",
+  "author": [
+    "Smolen, T",
+    "Benova, L"
+  ],
+  "tahun": 2023,
+  "sumber_data": "https://ieeexplore.ieee.org/abstract/document/10143005/",
+  "rumusan_masalah": "Metode mana yang lebih efektif untuk deteksi anomali jaringan: autoencoder berbasis LSTM atau Isolation Forest?",
+  "penelitian_terkini": "Penelitian ini membandingkan dua pendekatan populer dalam deteksi anomali jaringan, yaitu model Autoencoder berbasis LSTM dan algoritma Isolation Forest.",
+  "hasil_yang_diharapkan": "Menentukan metode mana yang memberikan akurasi lebih tinggi dan lebih efisien dalam mendeteksi anomali jaringan.",
+  "tantangan": "Menyesuaikan model dengan jenis data jaringan yang bervariasi serta mengatasi tantangan pada dimensi dan noise data real-world.",
+  "hasil_akhir": "Model Autoencoder LSTM menunjukkan performa yang kompetitif terhadap Isolation Forest untuk tugas deteksi anomali, dan telah disitasi 8 kali sejak tahun 2023."
+},
+
+{
+  "judul": "Joint coding-modulation for digital semantic communications via variational autoencoder",
+  "publisher": "IEEE (IEEE Transactions on Communications)",
+  "author": [
+    "Bo, Y",
+    "Duan, Y",
+    "Shao, S",
+    "Tao, M"
+  ],
+  "tahun": 2024,
+  "sumber_data": "https://ieeexplore.ieee.org/abstract/document/10495330/",
+  "rumusan_masalah": "Bagaimana meningkatkan efisiensi dan efektivitas komunikasi semantik digital melalui pendekatan penggabungan coding dan modulasi menggunakan variational autoencoder (VAE)?",
+  "penelitian_terkini": "Penelitian ini memanfaatkan VAE untuk merancang sistem komunikasi semantik digital yang menggabungkan proses pengkodean dan modulasi secara end-to-end.",
+  "hasil_yang_diharapkan": "Peningkatan efisiensi spektrum dan pemahaman semantik dalam sistem komunikasi digital dengan arsitektur berbasis VAE.",
+  "tantangan": "Kompleksitas dalam penggabungan pengkodean dan modulasi dalam ruang semantik, serta kestabilan pelatihan model VAE untuk data kompleks.",
+  "hasil_akhir": "Model VAE menunjukkan kinerja unggul dalam komunikasi semantik digital dan telah disitasi sebanyak 57 kali sejak tahun 2024."
+},
+
+{
+  "judul": "A deep learning-based intrusion detection approach for mobile Ad-hoc network",
+  "publisher": "Springer (Soft Computing)",
+  "author": [
+    "Meddeb, R",
+    "Jemili, F",
+    "Triki, B",
+    "Korbaa, O"
+  ],
+  "tahun": 2023,
+  "sumber_data": "https://link.springer.com/article/10.1007/s00500-023-08324-4",
+  "rumusan_masalah": "Bagaimana mendeteksi intrusi secara efektif dalam Mobile Ad-hoc Networks (MANET) menggunakan pendekatan deep learning?",
+  "penelitian_terkini": "Menggabungkan Stacked Autoencoder dengan CNN dan LSTM untuk membentuk arsitektur deep learning dalam sistem deteksi intrusi pada jaringan MANET.",
+  "hasil_yang_diharapkan": "Sistem IDS (Intrusion Detection System) berbasis deep learning yang akurat dan andal dalam mendeteksi anomali pada jaringan bergerak.",
+  "tantangan": "Mengelola data jaringan yang dinamis, latensi rendah, dan keterbatasan sumber daya pada node MANET saat melatih model deep learning.",
+  "hasil_akhir": "Model berhasil meningkatkan akurasi deteksi intrusi dan telah disitasi sebanyak 40 kali sejak dipublikasikan tahun 2023."
+},
+
+{
+  "judul": "Modbus/rs-485 attack detection on communication signals with machine learning",
+  "publisher": "IEEE (Communications)",
+  "author": [
+    "Ochiai, H",
+    "Hossain, MD",
+    "Chirupphapa, P",
+    "..."
+  ],
+  "tahun": 2023,
+  "sumber_data": "https://ieeexplore.ieee.org/abstract/document/10113798/",
+  "rumusan_masalah": "Bagaimana mendeteksi serangan pada sinyal komunikasi Modbus/RS-485 menggunakan pendekatan machine learning?",
+  "penelitian_terkini": "Penelitian memfokuskan pada penggunaan model autoencoder, termasuk MLP-autoencoder, 1D-CNN autoencoder, dan LSTM-autoencoder untuk deteksi anomali pada komunikasi industri.",
+  "hasil_yang_diharapkan": "Pengembangan sistem deteksi serangan yang efektif dan efisien terhadap sinyal komunikasi berbasis Modbus/RS-485.",
+  "tantangan": "Menangani keberagaman sinyal dan karakteristik trafik komunikasi industri dengan model yang mampu generalisasi dan memiliki akurasi tinggi.",
+  "hasil_akhir": "MLP-autoencoder dipilih sebagai fokus utama, dengan hasil eksperimen menunjukkan efektivitas dalam mendeteksi anomali; artikel ini telah disitasi 12 kali sejak tahun 2023."
+},
+
+{
+  "judul": "CNN autoencoder resizer: A power-efficient LoS/NLoS detector in MIMO-enabled UAV networks",
+  "publisher": "IEEE (Communications)",
+  "author": [
+    "Akhtarshenas, A",
+    "Ayoobi, N",
+    "..."
+  ],
+  "tahun": 2024,
+  "sumber_data": "https://ieeexplore.ieee.org/abstract/document/10817279/",
+  "rumusan_masalah": "Bagaimana mendeteksi kondisi Line-of-Sight (LoS) dan Non-Line-of-Sight (NLoS) secara efisien dalam jaringan UAV dengan MIMO menggunakan pendekatan deep learning yang hemat daya?",
+  "penelitian_terkini": "Mengusulkan arsitektur CNN autoencoder yang diintegrasikan dengan RNN untuk klasifikasi LoS/NLoS pada jaringan ultra-wideband (UWB) ad hoc yang digunakan dalam navigasi dalam ruangan oleh UAV.",
+  "hasil_yang_diharapkan": "Sistem deteksi LoS/NLoS dengan efisiensi daya tinggi, akurasi tinggi, dan keandalan yang dapat meningkatkan keselamatan dan kinerja komunikasi UAV.",
+  "tantangan": "Menghadapi keterbatasan daya UAV dan memastikan keandalan deteksi sinyal dalam kondisi kanal yang kompleks dan dinamis.",
+  "hasil_akhir": "Model CNN-RNN autoencoder menunjukkan hasil menjanjikan dalam deteksi LoS/NLoS dengan efisiensi daya yang lebih baik; telah disitasi 2 kali sejak 2024."
+},
+
+{
+  "judul": "Deep Autoencoder-Based Hybrid Network for Building Energy Consumption Forecasting",
+  "publisher": "Computer Systems Science & Engineering (via ResearchGate)",
+  "author": [
+    "Khan, N",
+    "Khan, SU"
+  ],
+  "tahun": 2024,
+  "sumber_data": "https://www.researchgate.net/profile/Noman-Khan-23/publication/374912116_Deep_Autoencoder-Based_Hybrid_Network_for_Building_Energy_Consumption_Forecasting/links/65b1b33e6c7ad06ab4279d4a/Deep-Autoencoder-Based-Hybrid-Network-for-Building-Energy-Consumption-Forecasting.pdf",
+  "rumusan_masalah": "Bagaimana membangun model prediksi konsumsi energi bangunan yang akurat menggunakan pendekatan deep learning berbasis autoencoder?",
+  "penelitian_terkini": "Mengembangkan jaringan hibrida berbasis deep autoencoder yang memanfaatkan LSTM dan convolutional LSTM untuk menangani komponen linier dan nonlinier dari data konsumsi energi.",
+  "hasil_yang_diharapkan": "Prediksi konsumsi energi yang lebih akurat dan efisien untuk bangunan dengan mempertimbangkan dinamika linier dan nonlinier dari data historis.",
+  "tantangan": "Menangani kompleksitas temporal dan spasial dari data konsumsi energi serta integrasi model linier dan nonlinier dalam satu arsitektur jaringan yang stabil.",
+  "hasil_akhir": "Model dua fase (LSTM dan Conv-LSTM) menunjukkan performa yang baik dan telah disitasi sebanyak 5 kali sejak 2024."
+},
+
+{
+  "judul": "Semi-2DCAE: a semi-supervision 2D-CNN AutoEncoder model for feature representation and classification of encrypted traffic",
+  "publisher": "PeerJ Computer Science",
+  "author": [
+    "Cui, J",
+    "Bai, L",
+    "Li, G",
+    "Lin, Z",
+    "Zeng, P"
+  ],
+  "tahun": 2023,
+  "sumber_data": "https://peerj.com/articles/cs-1635/",
+  "rumusan_masalah": "Bagaimana mengklasifikasikan lalu lintas terenkripsi secara efisien menggunakan pendekatan deep learning yang mampu menangani data terbatas dalam skenario semi-supervised?",
+  "penelitian_terkini": "Model Semi-2DCAE yang menggabungkan 2D Convolutional AutoEncoder dengan pendekatan semi-supervised untuk representasi fitur dan klasifikasi data jaringan terenkripsi.",
+  "hasil_yang_diharapkan": "Peningkatan akurasi klasifikasi terhadap data lalu lintas terenkripsi meskipun hanya tersedia sebagian label (semi-supervised).",
+  "tantangan": "Kesulitan dalam menganalisis lalu lintas terenkripsi akibat teknik penyamaran seperti port randomization dan tunneling yang mengaburkan fitur utama.",
+  "hasil_akhir": "Model Semi-2DCAE menunjukkan kinerja yang menjanjikan untuk klasifikasi lalu lintas terenkripsi dan telah disitasi sebanyak 5 kali sejak 2023."
+},
+
+{
+  "judul": "Autoencoder application for anomaly detection in power consumption of lighting systems",
+  "publisher": "IEEE Access",
+  "author": [
+    "Śmiałkowski, T",
+    "Czyżewski, A"
+  ],
+  "tahun": 2023,
+  "sumber_data": "https://ieeexplore.ieee.org/abstract/document/10309114/",
+  "rumusan_masalah": "Bagaimana mendeteksi anomali dalam konsumsi daya sistem pencahayaan secara otomatis dan efektif menggunakan model deep learning?",
+  "penelitian_terkini": "Penggunaan Autoencoder yang dikombinasikan dengan LSTM dan jaringan konvolusional 1D untuk deteksi anomali pada data konsumsi energi listrik.",
+  "hasil_yang_diharapkan": "Peningkatan kemampuan deteksi dini terhadap pola konsumsi daya yang tidak biasa atau abnormal dalam sistem pencahayaan.",
+  "tantangan": "Membedakan anomali nyata dari variasi konsumsi listrik normal serta memilih arsitektur model yang optimal untuk performa tinggi.",
+  "hasil_akhir": "Model berhasil menunjukkan efektivitas deteksi anomali pada berbagai jenis pola konsumsi listrik dan telah disitasi sebanyak 3 kali sejak 2023."
+},
+
+{
+  "judul": "Employing Sequence-to-Sequence Stacked LSTM Autoencoder Architecture to Forecast Indian Weather",
+  "publisher": "Elsevier - Procedia Computer Science",
+  "author": [
+    "Maharatha, A",
+    "Das, R",
+    "Mishra, J",
+    "Nayak, SR"
+  ],
+  "tahun": 2024,
+  "sumber_data": "https://www.sciencedirect.com/science/article/pii/S1877050924008901",
+  "rumusan_masalah": "Bagaimana menerapkan arsitektur Stacked LSTM Autoencoder untuk memprediksi kondisi cuaca di India secara akurat?",
+  "penelitian_terkini": "Studi ini mengeksplorasi penggunaan model sequence-to-sequence berbasis Stacked LSTM Autoencoder, serta membandingkannya dengan varian LSTM lainnya seperti vanilla LSTM dan bidirectional LSTM.",
+  "hasil_yang_diharapkan": "Meningkatkan akurasi prakiraan cuaca harian berdasarkan data time-series iklim India dengan metode deep learning.",
+  "tantangan": "Mengelola kompleksitas data sekuensial jangka panjang dan menentukan arsitektur LSTM yang paling optimal untuk prakiraan multivariat.",
+  "hasil_akhir": "Model menunjukkan performa prediksi yang menjanjikan untuk prakiraan cuaca di India dan telah disitasi sebanyak 6 kali sejak dipublikasikan pada 2024."
+},
+
+{
+  "judul": "A transferred spatio-temporal deep model based on multi-LSTM auto-encoder for air pollution time series missing value imputation",
+  "publisher": "Elsevier - Future Generation Computer Systems",
+  "author": [
+    "Zhang, X",
+    "Zhou, P"
+  ],
+  "tahun": 2024,
+  "sumber_data": "https://www.sciencedirect.com/science/article/pii/S0167739X24000839",
+  "rumusan_masalah": "Bagaimana mengatasi hilangnya nilai pada data deret waktu polusi udara menggunakan pendekatan deep learning yang memanfaatkan informasi spasial dan temporal?",
+  "penelitian_terkini": "Penelitian ini menggabungkan teknik transfer learning, deep autoencoder (DAE), dan multiple LSTM dalam satu arsitektur untuk mengimputasi nilai yang hilang pada data deret waktu polusi udara.",
+  "hasil_yang_diharapkan": "Menghasilkan model yang mampu memprediksi nilai-nilai polusi udara yang hilang dengan akurasi tinggi dengan mempertimbangkan hubungan spasial-temporal antar lokasi pengukuran.",
+  "tantangan": "Menggabungkan kompleksitas spasial dan temporal secara efektif dalam satu model deep learning, serta menangani ketidakkonsistenan data yang hilang.",
+  "hasil_akhir": "Model yang diusulkan menunjukkan performa yang kompetitif dalam imputasi nilai yang hilang dan telah disitasi sebanyak 10 kali sejak tahun 2024."
+},
+
+{
+  "judul": "Anomaly detection for connected autonomous vehicles using LSTM and Gaussian naïve Bayes",
+  "publisher": "Springer - Conference on Wireless",
+  "author": [
+    "Mansourian, P",
+    "Zhang, N",
+    "Jaekel, A",
+    "..."
+  ],
+  "tahun": 2023,
+  "sumber_data": "https://link.springer.com/chapter/10.1007/978-3-031-34851-8_3",
+  "rumusan_masalah": "Bagaimana mendeteksi anomali pada kendaraan otonom yang terhubung (CAV) dengan mempertimbangkan komunikasi internal dan akses jaringan eksternal?",
+  "penelitian_terkini": "Penelitian ini mengusulkan metode deteksi anomali berbasis LSTM Autoencoder yang dikombinasikan dengan Gaussian Naïve Bayes dan membandingkan performanya dengan metode lain.",
+  "hasil_yang_diharapkan": "Meningkatkan deteksi dini terhadap perilaku anomali dalam sistem kendaraan otonom terhubung dengan akurasi tinggi.",
+  "tantangan": "Mengelola kompleksitas data spasial-temporal dari kendaraan otonom dan menjaga akurasi prediksi dalam sistem distribusi komunikasi kendaraan.",
+  "hasil_akhir": "Model gabungan LSTM Autoencoder dan Gaussian Naïve Bayes menunjukkan performa yang menjanjikan dan telah disitasi sebanyak 9 kali sejak 2023."
+},
+
+{
+  "judul": "Simultaneous fault detection in satellite power systems using deep autoencoders and classifier chain",
+  "publisher": "Springer - Telecommunication Systems",
+  "author": [
+    "Ganesan, M",
+    "Lavanya, R"
+  ],
+  "tahun": 2023,
+  "sumber_data": "https://link.springer.com/article/10.1007/s11235-023-00998-3",
+  "rumusan_masalah": "Bagaimana mendeteksi beberapa jenis gangguan secara simultan pada sistem tenaga satelit dengan akurasi tinggi?",
+  "penelitian_terkini": "Penelitian ini mengusulkan penggunaan deep autoencoder bersama classifier chain untuk mengklasifikasikan dan mendeteksi gangguan simultan pada sistem tenaga satelit.",
+  "hasil_yang_diharapkan": "Mampu mengenali berbagai jenis gangguan secara bersamaan dan meningkatkan keandalan sistem tenaga satelit.",
+  "tantangan": "Mengklasifikasikan banyak jenis gangguan secara bersamaan dan menangani ketidakseimbangan kelas dalam data gangguan.",
+  "hasil_akhir": "Model deep autoencoder yang digabungkan dengan classifier chain menunjukkan performa yang baik dalam deteksi gangguan simultan dan telah disitasi 4 kali sejak 2023."
+},
+
+{
+  "judul": "Network Anomaly Detection Using Autoencoder on Various Datasets: A Comprehensive Review",
+  "publisher": "Bentham Science - Recent Patents on ...",
+  "author": [
+    "Singh, R",
+    "Srivastava, N",
+    "Kumar, A"
+  ],
+  "tahun": 2024,
+  "sumber_data": "https://www.benthamdirect.com/content/journals/eng/10.2174/0118722121242429230922070752",
+  "rumusan_masalah": "Bagaimana efektivitas metode autoencoder, khususnya LSTM-autoencoder, dalam mendeteksi anomali jaringan pada berbagai dataset?",
+  "penelitian_terkini": "Artikel ini merupakan tinjauan komprehensif tentang metode deteksi anomali jaringan menggunakan autoencoder, dengan fokus pada integrasi LSTM-autoencoder dan OC-SVM.",
+  "hasil_yang_diharapkan": "Menunjukkan keunggulan pendekatan LSTM-autoencoder dalam mendeteksi anomali jaringan serta mengevaluasi performanya di berbagai dataset.",
+  "tantangan": "Menentukan model autoencoder yang optimal, mengatasi kompleksitas data jaringan, serta membandingkan efektivitas metode di berbagai kondisi dan dataset.",
+  "hasil_akhir": "LSTM autoencoder yang dikombinasikan dengan OC-SVM terbukti efektif untuk deteksi anomali jaringan dan telah disitasi sebanyak 12 kali sejak tahun 2024."
+},
+
+{
+  "judul": "Ae-net: Novel autoencoder-based deep features for SQL injection attack detection",
+  "publisher": "IEEE",
+  "author": [
+    "Thalji, N",
+    "Raza, A",
+    "Islam, MS",
+    "Samee, NA"
+  ],
+  "tahun": 2023,
+  "sumber_data": "https://ieeexplore.ieee.org/abstract/document/10332180/",
+  "rumusan_masalah": "Bagaimana merancang pendekatan autoencoder baru yang efektif untuk mendeteksi serangan SQL Injection dalam sistem jaringan?",
+  "penelitian_terkini": "Makalah ini memperkenalkan AE-Net, sebuah pendekatan deep learning berbasis autoencoder yang dioptimalkan untuk ekstraksi fitur dalam deteksi serangan SQL Injection.",
+  "hasil_yang_diharapkan": "Meningkatkan akurasi dan efisiensi deteksi serangan SQL Injection dengan memanfaatkan fitur mendalam dari autoencoder.",
+  "tantangan": "Mengurangi kesalahan deteksi yang tinggi pada model LSTM konvensional serta mengembangkan model yang mampu menangani data serangan yang kompleks.",
+  "hasil_akhir": "AE-Net menunjukkan performa yang unggul dalam deteksi serangan SQL Injection dibanding pendekatan LSTM tradisional. Artikel ini telah disitasi sebanyak 23 kali sejak tahun 2023."
+},
+
+{
+  "judul": "An LSTM-autoencoder based online side channel monitoring approach for cyber-physical attack detection in additive manufacturing",
+  "publisher": "Springer",
+  "author": [
+    "Shi, Z",
+    "Mamun, AA",
+    "Kan, C",
+    "Tian, W",
+    "Liu, C"
+  ],
+  "tahun": 2023,
+  "sumber_data": "https://link.springer.com/article/10.1007/s10845-021-01879-9",
+  "rumusan_masalah": "Bagaimana mendeteksi serangan siber-fisik secara online dalam proses manufaktur aditif melalui analisis sinyal samping (side-channel) menggunakan pembelajaran mendalam?",
+  "penelitian_terkini": "Penelitian ini mengusulkan pendekatan monitoring sinyal samping secara online berbasis LSTM-autoencoder untuk mendeteksi anomali akibat serangan siber dalam sistem manufaktur aditif.",
+  "hasil_yang_diharapkan": "Mengembangkan sistem pendeteksi serangan yang mampu secara real-time mengenali aktivitas tidak normal berdasarkan pola sinyal yang kompleks.",
+  "tantangan": "Menangkap karakteristik waktu dan representasi non-linier dari data sinyal yang rumit dengan akurasi tinggi dan latensi rendah.",
+  "hasil_akhir": "Model LSTM-autoencoder berhasil menunjukkan efektivitas tinggi dalam mendeteksi serangan siber di sistem manufaktur aditif. Artikel ini telah disitasi sebanyak 80 kali sejak 2023."
+},
+
+{
+  "judul": "Novelty detection and fault diagnosis method for bearing faults based on the hybrid deep autoencoder network",
+  "publisher": "MDPI (Electronics)",
+  "author": [
+    "Zhao, Y",
+    "Hao, H",
+    "Chen, Y",
+    "Zhang, Y"
+  ],
+  "tahun": 2023,
+  "sumber_data": "https://www.mdpi.com/2079-9292/12/13/2826",
+  "rumusan_masalah": "Bagaimana mendeteksi gangguan baru (novelty) dan mendiagnosis kerusakan bantalan secara efektif menggunakan jaringan autoencoder dalam?",
+  "penelitian_terkini": "Penelitian ini menggabungkan model LSTM Autoencoder dan Stacked Autoencoder (SAE) sebagai pendekatan hibrida untuk diagnosis kesalahan bantalan.",
+  "hasil_yang_diharapkan": "Meningkatkan akurasi dan sensitivitas sistem diagnosis kerusakan dengan memanfaatkan kekuatan dari arsitektur deep learning LSTM dan SAE.",
+  "tantangan": "Membangun jaringan hibrida yang kompleks namun efisien yang mampu menangani data getaran bearing secara real-time tanpa overfitting.",
+  "hasil_akhir": "Model hibrida menunjukkan kinerja superior dibandingkan metode individual, dengan struktur 8 lapisan neural network dalam LSTM autoencoder. Artikel ini telah disitasi sebanyak 26 kali sejak 2023."
+},
+
+{
+  "judul": "FACT: Autoencoder and Attention Conv-LSTM based Collaborative Framework for Cloud Cover Prediction",
+  "publisher": "IEEE",
+  "author": [
+    "Patel, M",
+    "Tanwar, S",
+    "Jadav, NK",
+    "Gupta, R",
+    "Pau, G"
+  ],
+  "tahun": 2024,
+  "sumber_data": "https://ieeexplore.ieee.org/abstract/document/10630474/",
+  "rumusan_masalah": "Bagaimana memprediksi tutupan awan secara akurat menggunakan pendekatan deep learning yang kolaboratif dan efisien?",
+  "penelitian_terkini": "Artikel ini memperkenalkan FACT, kerangka kerja kolaboratif berbasis Autoencoder dan Attention Conv-LSTM untuk prediksi tutupan awan. Dibandingkan Stack-LSTM dan CNN-LSTM.",
+  "hasil_yang_diharapkan": "Meningkatkan akurasi prediksi tutupan awan dengan menggabungkan reduksi dimensi oleh autoencoder dan pemrosesan spasio-temporal oleh Attention Conv-LSTM.",
+  "tantangan": "Mengelola kompleksitas data spasial-temporal dan mengoptimalkan perhatian (attention) dalam jaringan LSTM konvolusional untuk menghasilkan prediksi jangka pendek yang akurat.",
+  "hasil_akhir": "FACT berhasil mengurangi dimensi data menggunakan autoencoder dan meningkatkan performa prediksi. Artikel ini telah disitasi sebanyak 2 kali sejak 2024."
+},
+
+{
+  "judul": "A Frequency Domain Predictive Channel Model for 6G Wireless MIMO Communications Based on Deep Learning",
+  "publisher": "IEEE",
+  "author": [
+    "Huang, C",
+    "Wang, CX",
+    "Li, Z",
+    "Qian, Z",
+    "Li, J"
+  ],
+  "tahun": 2024,
+  "sumber_data": "https://ieeexplore.ieee.org/abstract/document/10466759/",
+  "rumusan_masalah": "Bagaimana membangun model prediksi kanal frekuensi domain untuk komunikasi nirkabel 6G MIMO menggunakan pendekatan deep learning yang akurat dan efisien?",
+  "penelitian_terkini": "Studi ini mengembangkan model prediktif domain frekuensi berbasis deep learning untuk sistem komunikasi MIMO 6G, memanfaatkan Autoencoder dengan arsitektur alternatif (bukan hanya fully connected) dan jaringan LSTM.",
+  "hasil_yang_diharapkan": "Meningkatkan akurasi prediksi kanal komunikasi 6G dalam domain frekuensi dengan arsitektur deep learning yang inovatif.",
+  "tantangan": "Membangun arsitektur jaringan yang mampu menangkap karakteristik temporal dan frekuensi secara efektif dalam kanal nirkabel 6G.",
+  "hasil_akhir": "Model berhasil divalidasi dengan jaringan LSTM dan Autoencoder dengan desain non-konvensional. Artikel ini telah disitasi sebanyak 10 kali sejak 2024."
+},
+
+{
+  "judul": "Intelligent Reflecting Surface Enhanced Wireless Communications With MultiHead-Attention Sparse Autoencoder-Based Channel Prediction",
+  "publisher": "IEEE",
+  "author": [
+    "Chen, HY",
+    "Wu, MH",
+    "Yang, TW",
+    "Liao, JW"
+  ],
+  "tahun": 2023,
+  "sumber_data": "https://ieeexplore.ieee.org/abstract/document/10231324/",
+  "rumusan_masalah": "Bagaimana meningkatkan prediksi kanal dalam sistem komunikasi nirkabel yang diperkuat dengan Intelligent Reflecting Surface (IRS) menggunakan metode deep learning yang efisien?",
+  "penelitian_terkini": "Mengusulkan model prediksi kanal berbasis autoencoder denoising sparsely-connected dengan perhatian multi-head (MultiHead-Attention Sparse Autoencoder), sebagai solusi untuk memprediksi kanal dalam sistem IRS.",
+  "hasil_yang_diharapkan": "Meningkatkan akurasi prediksi kanal IRS dengan model deep learning yang hemat parameter dan efisien.",
+  "tantangan": "Menggabungkan kompleksitas struktur IRS dengan efisiensi dan akurasi model channel prediction berbasis deep learning dalam kondisi nirkabel yang dinamis.",
+  "hasil_akhir": "Model yang diusulkan menunjukkan performa yang kompetitif dan telah disitasi 3 kali sejak dipublikasikan pada 2023."
+},
+
+{
+  "judul": "CSI-based human activity recognition using multi-input multi-output autoencoder and fine-tuning",
+  "publisher": "MDPI (Sensors)",
+  "author": [
+    "Chahoushi, M",
+    "Nabati, M",
+    "Asvadi, R",
+    "Ghorashi, SA"
+  ],
+  "tahun": 2023,
+  "sumber_data": "https://www.mdpi.com/1424-8220/23/7/3591",
+  "rumusan_masalah": "Bagaimana meningkatkan akurasi pengenalan aktivitas manusia berbasis CSI (Channel State Information) menggunakan pendekatan autoencoder yang disesuaikan dengan fine-tuning?",
+  "penelitian_terkini": "Mengembangkan arsitektur autoencoder multi-input multi-output yang menggabungkan lapisan CNN dan LSTM, dengan fine-tuning untuk klasifikasi aktivitas manusia dari data CSI.",
+  "hasil_yang_diharapkan": "Peningkatan performa deteksi aktivitas manusia dengan memanfaatkan autoencoder yang mampu menangkap fitur spasial dan temporal dari data CSI.",
+  "tantangan": "Memproses sinyal CSI kompleks dan menangkap dinamika temporal aktivitas manusia secara akurat dalam lingkungan nyata.",
+  "hasil_akhir": "Model menunjukkan kinerja yang kompetitif dan telah disitasi sebanyak 12 kali sejak 2023."
+},
+
+{
+  "judul": "Anomaly detection in connected and autonomous vehicle trajectories using LSTM autoencoder and Gaussian mixture model",
+  "publisher": "MDPI (Electronics)",
+  "author": [
+    "Wang, B",
+    "Li, W",
+    "Khattak, ZH"
+  ],
+  "tahun": 2024,
+  "sumber_data": "https://www.mdpi.com/2079-9292/13/7/1251",
+  "rumusan_masalah": "Bagaimana mendeteksi anomali dalam lintasan kendaraan otonom dan terhubung (CAVs) secara efektif menggunakan model deep learning?",
+  "penelitian_terkini": "Mengusulkan kombinasi LSTM Autoencoder dan Gaussian Mixture Model (GMM) untuk mendeteksi anomali dalam data lintasan CAVs.",
+  "hasil_yang_diharapkan": "Model dapat mengidentifikasi pergerakan kendaraan yang tidak normal atau tidak biasa untuk meningkatkan keselamatan dan keandalan sistem transportasi cerdas.",
+  "tantangan": "Menangani kerumitan data lintasan yang bersifat sekuensial dan dinamis dalam lingkungan lalu lintas dunia nyata.",
+  "hasil_akhir": "Model gabungan LSTM Autoencoder dan GMM menunjukkan efektivitas dalam mendeteksi anomali dan telah disitasi sebanyak 10 kali sejak 2024."
+},
+
+{
+  "judul": "Underwater wireless optical communication with one-bit quantization: A hybrid autoencoder and generative adversarial network approach",
+  "publisher": "IEEE (Transactions on Wireless Communications)",
+  "author": [
+    "Zou, C",
+    "Yang, F",
+    "Song, J",
+    "Han, Z"
+  ],
+  "tahun": 2023,
+  "sumber_data": "https://ieeexplore.ieee.org/abstract/document/10044696/",
+  "rumusan_masalah": "Bagaimana meningkatkan performa komunikasi optik nirkabel bawah air dengan keterbatasan kuantisasi satu bit?",
+  "penelitian_terkini": "Mengusulkan pendekatan hibrida yang menggabungkan Autoencoder (AE) dan Generative Adversarial Network (GAN) untuk meningkatkan efisiensi komunikasi optik bawah air.",
+  "hasil_yang_diharapkan": "Meningkatkan akurasi pemulihan sinyal dalam sistem komunikasi optik bawah air yang dibatasi oleh kuantisasi satu bit.",
+  "tantangan": "Menghadapi keterbatasan kuantisasi sinyal digital dan lingkungan bawah air yang sangat dinamis dan kompleks.",
+  "hasil_akhir": "Model hybrid AE-GAN berhasil meningkatkan performa sistem komunikasi bawah air dan telah disitasi sebanyak 15 kali sejak 2023."
+},
+
+{
+  "judul": "A novel approach of botnet detection using hybrid deep learning for enhancing security in IoT networks",
+  "publisher": "Elsevier (Alexandria Engineering Journal)",
+  "author": [
+    "Ali, S",
+    "Ghazal, R",
+    "Qadeer, N",
+    "Saidani, O",
+    "Alhayan, F"
+  ],
+  "tahun": 2024,
+  "sumber_data": "https://www.sciencedirect.com/science/article/pii/S1110016824005830",
+  "rumusan_masalah": "Bagaimana mendeteksi botnet secara efektif dalam jaringan IoT yang terus berkembang dengan serangan yang semakin kompleks?",
+  "penelitian_terkini": "Mengusulkan pendekatan deteksi botnet berbasis deep learning hibrida dengan menggabungkan LSTM Autoencoders dan Multilayer Perceptron (MLP) khusus untuk keamanan IoT.",
+  "hasil_yang_diharapkan": "Deteksi yang lebih akurat terhadap aktivitas botnet dalam jaringan IoT sekaligus mengurangi false positive.",
+  "tantangan": "Menghadapi variasi besar dalam pola lalu lintas data IoT dan meningkatkan kemampuan deteksi terhadap serangan yang tidak diketahui sebelumnya.",
+  "hasil_akhir": "Model hybrid LSTM Autoencoder + MLP menunjukkan performa tinggi dalam mendeteksi botnet dan telah mendapatkan 17 sitasi sejak tahun 2024."
+},
+
+{
+  "judul": "A novel smartphone-based human activity recognition approach using convolutional autoencoder long short-term memory network",
+  "publisher": "IEEE",
+  "author": [
+    "Thakur, D",
+    "Roy, S",
+    "Biswas, S",
+    "Ho, ESL"
+  ],
+  "tahun": 2023,
+  "sumber_data": "https://ieeexplore.ieee.org/abstract/document/10229380/",
+  "rumusan_masalah": "Bagaimana mengembangkan sistem pengenalan aktivitas manusia (HAR) berbasis smartphone yang akurat dan efisien menggunakan deep learning?",
+  "penelitian_terkini": "Menggabungkan arsitektur Convolutional Neural Network (CNN), Autoencoder, dan Long Short-Term Memory (LSTM) untuk meningkatkan akurasi dan efisiensi HAR berbasis smartphone.",
+  "hasil_yang_diharapkan": "Model deep learning yang mampu mendeteksi aktivitas manusia secara real-time dengan akurasi tinggi melalui sensor pada smartphone.",
+  "tantangan": "Menangani keragaman sinyal sensor dan memastikan efisiensi komputasi agar dapat diterapkan langsung di perangkat mobile.",
+  "hasil_akhir": "Model CNN-Autoencoder-LSTM menunjukkan sinergi efektif dalam mengklasifikasi aktivitas manusia dengan 17 sitasi sejak tahun 2023."
+},
+
+{
+  "judul": "Deep learning in physical layer communications: Evolution and prospects in 5G and 6G networks",
+  "publisher": "Wiley Online Library",
+  "author": [
+    "Mao, C",
+    "Mu, Z",
+    "Liang, Q",
+    "Schizas, I",
+    "Pan, C"
+  ],
+  "tahun": 2023,
+  "sumber_data": "https://ietresearch.onlinelibrary.wiley.com/doi/abs/10.1049/cmu2.12669",
+  "rumusan_masalah": "Bagaimana perkembangan dan prospek penerapan deep learning, termasuk autoencoder dan GAN, dalam komunikasi lapisan fisik pada jaringan 5G dan 6G?",
+  "penelitian_terkini": "Studi ini meninjau penggunaan berbagai arsitektur deep learning seperti RNN, autoencoder, dan GAN dalam konteks komunikasi lapisan fisik, dengan fokus pada sistem komunikasi masa depan.",
+  "hasil_yang_diharapkan": "Menawarkan wawasan tentang bagaimana teknik deep learning dapat meningkatkan efisiensi spektral, keandalan transmisi, dan deteksi sinyal di jaringan 5G dan 6G.",
+  "tantangan": "Menghadapi kompleksitas model dan kebutuhan komputasi tinggi, serta keterbatasan dalam generalisasi model deep learning untuk skenario komunikasi yang dinamis.",
+  "hasil_akhir": "Artikel ini memberikan kerangka evolusi penggunaan deep learning di lapisan fisik dan telah dikutip sebanyak 14 kali sejak 2023, menandakan relevansinya di bidang jaringan generasi lanjut."
+},
+
+{
+  "judul": "CANival: A multimodal approach to intrusion detection on the vehicle CAN bus",
+  "publisher": "Elsevier",
+  "author": [
+    "Kang, H",
+    "Vo, T",
+    "Kim, HK",
+    "Hong, JB"
+  ],
+  "tahun": 2024,
+  "sumber_data": "https://www.sciencedirect.com/science/article/pii/S2214209624001207",
+  "rumusan_masalah": "Bagaimana mengembangkan metode deteksi intrusi yang efektif untuk sistem komunikasi Controller Area Network (CAN) pada kendaraan, yang pada dasarnya tidak memiliki mekanisme keamanan bawaan?",
+  "penelitian_terkini": "Penelitian ini mengusulkan pendekatan multimodal berbasis deep learning untuk menganalisis lalu lintas data CAN bus guna mendeteksi perilaku mencurigakan secara real-time.",
+  "hasil_yang_diharapkan": "Meningkatkan akurasi deteksi intrusi dan mengurangi false positives pada sistem komunikasi kendaraan melalui model deteksi yang menggabungkan beberapa sumber data.",
+  "tantangan": "Keterbatasan protokol CAN yang tidak menyediakan otentikasi atau enkripsi, serta kebutuhan untuk memproses data dalam waktu nyata di lingkungan sistem tertanam.",
+  "hasil_akhir": "CANival terbukti efektif dalam mendeteksi anomali pada CAN bus kendaraan dan telah memperoleh 8 sitasi sejak tahun 2024, menunjukkan kontribusi penting dalam keamanan kendaraan otonom."
+}
 
 
 ]
