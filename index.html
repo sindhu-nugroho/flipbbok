@@ -41,18 +41,28 @@
       const book = document.getElementById('flipbook');
       const page = data[pageIndex];
 
-      book.innerHTML = `
-        <h2 class="text-lg sm:text-xl font-semibold mb-2">${page.judul}</h2>
-        <p><strong>Publisher:</strong> ${page.publisher}</p>
-        <p><strong>Author:</strong> ${page.author.join(", ")}</p>
-        <p><strong>Tahun:</strong> ${page.tahun}</p>
-        <p><strong>Sumber Data:</strong> <a href="${page.sumber_data}" target="_blank" class="text-blue-600 underline">Lihat Artikel</a></p>
-        <p class="mt-4"><strong>Rumusan Masalah:</strong><br>${page.rumusan_masalah}</p>
-        <p class="mt-4"><strong>Penelitian Terkini:</strong><br>${page.penelitian_terkini}</p>
-        <p class="mt-4"><strong>Hasil yang Diharapkan:</strong><br>${page.hasil_yang_diharapkan}</p>
-        <p class="mt-4"><strong>Tantangan:</strong><br>${page.tantangan}</p>
-        <p class="mt-4"><strong>Hasil Akhir:</strong><br>${page.hasil_akhir}</p>
-      `;
+      // Jika halaman bertipe separator
+      if (page.type === "separator") {
+        book.innerHTML = `
+          <div class="w-full h-full flex items-center justify-center text-center">
+            <h2 class="text-3xl sm:text-5xl font-bold text-gray-800">${page.title}</h2>
+          </div>
+        `;
+      } else {
+        book.innerHTML = `
+          <h2 class="text-lg sm:text-xl font-semibold mb-2">${page.judul}</h2>
+          <p><strong>Publisher:</strong> ${page.publisher}</p>
+          <p><strong>Author:</strong> ${page.author.join(", ")}</p>
+          <p><strong>Tahun:</strong> ${page.tahun}</p>
+          <p><strong>Sumber Data:</strong> <a href="${page.sumber_data}" target="_blank" class="text-blue-600 underline">Lihat Artikel</a></p>
+          <p class="mt-4"><strong>Rumusan Masalah:</strong><br>${page.rumusan_masalah}</p>
+          <p class="mt-4"><strong>Penelitian Terkini:</strong><br>${page.penelitian_terkini}</p>
+          <p class="mt-4"><strong>Hasil yang Diharapkan:</strong><br>${page.hasil_yang_diharapkan}</p>
+          <p class="mt-4"><strong>Tantangan:</strong><br>${page.tantangan}</p>
+          <p class="mt-4"><strong>Hasil Akhir:</strong><br>${page.hasil_akhir}</p>
+        `;
+      }
+
 
       // Update page indicator
       const indicator = document.getElementById("page-indicator");
