@@ -1327,6 +1327,7 @@
   },
   {
     "type": "separator",
-    "title": "Cybersecurity"
+    "title": "Cybersecurity",
+    "image": "cyber-security.png"
   }
 ]
