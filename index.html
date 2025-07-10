@@ -1,87 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Artikel Jurnal</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-100 min-h-screen flex flex-col items-center justify-center px-0 sm:px-4">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Artikel Jurnal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="bg-gray-100 min-h-screen flex flex-col items-center justify-center px-0 sm:px-4"
+  >
+    <div class="w-full sm:max-w-4xl px-2">
+      <h1 class="text-xl sm:text-3xl font-bold text-center mb-4 sm:mb-6">
+        Flipbook Artikel Jurnal
+      </h1>
 
-  <div class="w-full sm:max-w-4xl px-2">
-    <h1 class="text-xl sm:text-3xl font-bold text-center mb-4 sm:mb-6">Flipbook Artikel Jurnal</h1>
+      <div
+        id="flipbook"
+        class="bg-white p-4 sm:p-6 sm:rounded-xl sm:shadow min-h-[400px] w-full text-base sm:text-lg"
+      >
+        <!-- Konten flipbook -->
+      </div>
 
-    <div id="flipbook" class="bg-white p-4 sm:p-6 sm:rounded-xl sm:shadow min-h-[400px] w-full text-base sm:text-lg">
-      <!-- Konten flipbook -->
+      <!-- Penomoran halaman -->
+      <div
+        class="text-center text-gray-600 mt-2 text-sm sm:text-base flex flex-col sm:flex-row items-center justify-center gap-2"
+      >
+        <div id="page-indicator">Page 1 of 1</div>
+        <div class="flex items-center gap-1">
+          <label for="pageInput">Go to page:</label>
+          <input
+            id="pageInput"
+            type="number"
+            min="1"
+            class="border rounded px-2 py-1 w-16 text-center"
+            onchange="goToPage(this.value)"
+          />
+        </div>
+      </div>
+
+      <div class="flex justify-between mt-4 px-4">
+        <button
+          onclick="prevPage()"
+          class="bg-stone-950 text-white px-4 py-2 rounded hover:bg-slate-600"
+        >
+          ← Prev
+        </button>
+        <button
+          onclick="nextPage()"
+          class="bg-stone-950 text-white px-4 py-2 rounded hover:bg-slate-600"
+        >
+          Next →
+        </button>
+      </div>
     </div>
 
-    <!-- Penomoran halaman -->
-    <div id="page-indicator" class="text-center text-gray-600 mt-2 text-sm sm:text-base">
-      Page 1 of 1
-    </div>
+    <script>
+      let pageIndex = 0;
+      let data = [];
 
-    <div class="flex justify-between mt-4 px-4">
-      <button onclick="prevPage()" class="bg-stone-950 text-white px-4 py-2 rounded hover:bg-slate-600">← Prev</button>
-      <button onclick="nextPage()" class="bg-stone-950 text-white px-4 py-2 rounded hover:bg-slate-600">Next →</button>
-    </div>
-  </div>
+      fetch("data.json")
+        .then((res) => res.json())
+        .then((json) => {
+          data = json;
+          renderPage();
+        });
 
-  <script>
-    let pageIndex = 0;
-    let data = [];
+      function renderPage() {
+        const book = document.getElementById("flipbook");
+        const page = data[pageIndex];
 
-    fetch('data.json')
-      .then(res => res.json())
-      .then(json => {
-        data = json;
-        renderPage();
-      });
-
-    function renderPage() {
-      const book = document.getElementById('flipbook');
-      const page = data[pageIndex];
-
-      // Jika halaman bertipe separator
-      if (page.type === "separator") {
-        book.innerHTML = `
+        // Jika halaman bertipe separator
+        if (page.type === "separator") {
+          book.innerHTML = `
           <div class="w-full h-full flex items-center justify-center text-center">
             <h2 class="text-3xl sm:text-5xl font-bold text-gray-800">${page.title}</h2>
           </div>
         `;
-      } else {
-        book.innerHTML = `
+        } else {
+          book.innerHTML = `
           <h2 class="text-lg sm:text-xl font-semibold mb-2">${page.judul}</h2>
           <p><strong>Publisher:</strong> ${page.publisher}</p>
           <p><strong>Author:</strong> ${page.author.join(", ")}</p>
           <p><strong>Tahun:</strong> ${page.tahun}</p>
-          <p><strong>Sumber Data:</strong> <a href="${page.sumber_data}" target="_blank" class="text-blue-600 underline">Lihat Artikel</a></p>
-          <p class="mt-4"><strong>Rumusan Masalah:</strong><br>${page.rumusan_masalah}</p>
-          <p class="mt-4"><strong>Penelitian Terkini:</strong><br>${page.penelitian_terkini}</p>
-          <p class="mt-4"><strong>Hasil yang Diharapkan:</strong><br>${page.hasil_yang_diharapkan}</p>
+          <p><strong>Sumber Data:</strong> <a href="${
+            page.sumber_data
+          }" target="_blank" class="text-blue-600 underline">Lihat Artikel</a></p>
+          <p class="mt-4"><strong>Rumusan Masalah:</strong><br>${
+            page.rumusan_masalah
+          }</p>
+          <p class="mt-4"><strong>Penelitian Terkini:</strong><br>${
+            page.penelitian_terkini
+          }</p>
+          <p class="mt-4"><strong>Hasil yang Diharapkan:</strong><br>${
+            page.hasil_yang_diharapkan
+          }</p>
           <p class="mt-4"><strong>Tantangan:</strong><br>${page.tantangan}</p>
-          <p class="mt-4"><strong>Hasil Akhir:</strong><br>${page.hasil_akhir}</p>
+          <p class="mt-4"><strong>Hasil Akhir:</strong><br>${
+            page.hasil_akhir
+          }</p>
         `;
+        }
+
+        // Update page indicator
+        const indicator = document.getElementById("page-indicator");
+        indicator.textContent = `Page ${pageIndex + 1} of ${data.length}`;
       }
 
-
-      // Update page indicator
-      const indicator = document.getElementById("page-indicator");
-      indicator.textContent = `Page ${pageIndex + 1} of ${data.length}`;
-    }
-
-    function nextPage() {
-      if (pageIndex < data.length - 1) {
-        pageIndex++;
-        renderPage();
+      function nextPage() {
+        if (pageIndex < data.length - 1) {
+          pageIndex++;
+          renderPage();
+        }
       }
-    }
 
-    function prevPage() {
-      if (pageIndex > 0) {
-        pageIndex--;
-        renderPage();
+      function prevPage() {
+        if (pageIndex > 0) {
+          pageIndex--;
+          renderPage();
+        }
       }
-    }
-  </script>
-</body>
+
+      function goToPage(pageNum) {
+        const index = parseInt(pageNum) - 1;
+        if (!isNaN(index) && index >= 0 && index < data.length) {
+          pageIndex = index;
+          renderPage();
+        } else {
+          alert("Halaman tidak valid.");
+        }
+      }
+    </script>
+  </body>
 </html>
